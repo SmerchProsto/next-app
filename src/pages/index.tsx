@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Main from "@/components/Index/Main/ui";
 import InfoSection from "@/components/Index/InfoSection/ui";
+import Features from "@/components/Index/Features/ui";
 
 export default function Index() {
   return (
@@ -11,7 +12,8 @@ export default function Index() {
         <meta name='description' content='app main, app home' />
       </Head>
         <Main elements={[
-            <InfoSection key='infoSection'/>
+            <InfoSection key='infoSection'/>,
+            <Features key='Features'/>
         ]} />
     </>
   );
