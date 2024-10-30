@@ -14,6 +14,7 @@ export default function Index() {
         <Main elements={[
             <InfoSection key='infoSection'/>,
             <Features key='Features'/>
+
         ]} />
     </>
   );

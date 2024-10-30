@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CenteredContainer from "@/components/CenteredContainer/ui";
+import CenteredContainer from "@/components/shared/CenteredContainer/ui";
 import {LazyYoutubeEmbed} from "@/lib/LazyYoutubeEmbed";
 
 const StylizedSection = styled.section`

@@ -1,7 +1,7 @@
 'use client'
 import styled from "styled-components";
-import CenteredContainer from "@/components/CenteredContainer/ui";
-import A from "@/components/A/ui";
+import CenteredContainer from "@/components/shared/CenteredContainer/ui";
+import A from "@/components/shared/A/ui";
 import BlackButton from "@/components/shared/BlackButton/ui";
 const HeaderBlock = styled.header`
     border-bottom: 1px solid rgb(217, 217, 217);

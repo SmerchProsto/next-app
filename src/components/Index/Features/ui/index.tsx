@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import CenteredContainer from "@/components/CenteredContainer/ui";
+import CenteredContainer from "@/components/shared/CenteredContainer/ui";
 import BlackButton from "@/components/shared/BlackButton/ui";
-import A from "@/components/A/ui";
+import A from "@/components/shared/A/ui";
 
 const FeaturesBlock = styled.section`
     padding: 40px 0 10px 0;
