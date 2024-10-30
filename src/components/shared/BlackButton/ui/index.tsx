@@ -1,7 +1,7 @@
 import {ReactNode} from "react";
 import styled from "styled-components";
 
-const StylizedDiv = styled.div<{$width?: string;}>`
+const StylizedDiv = styled.div`
     width: 200px;
     padding: 10px;
     color: #ffffff;
@@ -14,6 +14,6 @@ const StylizedDiv = styled.div<{$width?: string;}>`
     }
 `;
 
-export default function BlackButton({children, width}: {children: ReactNode|string, width?:string}) {
-    return <StylizedDiv $width={width}>{children}</StylizedDiv>;
+export default function BlackButton({children}: {children: ReactNode|string}) {
+    return <StylizedDiv>{children}</StylizedDiv>;
 }

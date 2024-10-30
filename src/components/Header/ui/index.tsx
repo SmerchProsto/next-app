@@ -31,7 +31,7 @@ export default function Header() {
                         Some Company
                     </HeaderLogo>
                     <NavLinks>
-                        <BlackButton width="150px">
+                        <BlackButton>
                             <A linkAddress="/contact-us" text="Contact us" />
                         </BlackButton>
                     </NavLinks>
