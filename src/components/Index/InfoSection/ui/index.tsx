@@ -1,23 +1,21 @@
 import styled from "styled-components";
-import CenteredContainer from "@/components/shared/CenteredContainer/ui";
+import CenteredContainer from "@/components/shared/ui/CenteredContainer/ui";
 import {LazyYoutubeEmbed} from "@/lib/LazyYoutubeEmbed";
+import {SectionInfoBlock} from "@/components/shared/lib/SectionInfoBlock/SectionInfoBlock";
 
-const StylizedSection = styled.section`
-    min-height: 350px;
-    background: rgb(245, 245, 245);
-    
+const StylizedSectionInfoBlock = styled(SectionInfoBlock)`
     & .centeredContainer {
         display: flex;
         justify-content: space-between;
         padding: 30px 0 30px 0;
     }
-    
+
     @media (max-width: 961px) {
         & .centeredContainer {
             flex-direction: column;
         }
     }
-    
+
     & .infoSectionTitle {
         visibility: hidden;
         position: absolute;
@@ -67,7 +65,7 @@ const InfoSectionContentBlock = styled.section`
 
 export default function InfoSection() {
     return (
-        <StylizedSection>
+        <StylizedSectionInfoBlock>
             <CenteredContainer>
                 <h2 className="infoSectionTitle">Info title</h2>
                 <InfoSectionContentBlock>
@@ -82,6 +80,6 @@ export default function InfoSection() {
                     <LazyYoutubeEmbed className='youtubePlayer' videoUrl="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
                 </InfoSectionContentBlock>
             </CenteredContainer>
-        </StylizedSection>
+        </StylizedSectionInfoBlock>
     )
 }

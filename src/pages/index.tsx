@@ -2,6 +2,7 @@ import Head from "next/head";
 import Main from "@/components/Index/Main/ui";
 import InfoSection from "@/components/Index/InfoSection/ui";
 import Features from "@/components/Index/Features/ui";
+import LessInfoSection from "@/components/Index/LessInfoSection/ui";
 
 export default function Index() {
   return (
@@ -13,8 +14,8 @@ export default function Index() {
       </Head>
         <Main elements={[
             <InfoSection key='infoSection'/>,
-            <Features key='Features'/>
-
+            <Features key='Features'/>,
+            <LessInfoSection key='LessInfoSection'/>
         ]} />
     </>
   );
