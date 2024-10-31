@@ -28,7 +28,7 @@ export default function Header() {
             <CenteredContainer>
                 <HeaderNavigation>
                     <HeaderLogo>
-                        Some Company
+                        <A linkAddress="/" text="Some Company" />
                     </HeaderLogo>
                     <NavLinks>
                         <BlackButton>

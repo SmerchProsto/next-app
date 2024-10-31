@@ -39,9 +39,9 @@ export default function ContactUs() {
     return (
         <>
             <Head>
-                <meta name='title' content='Main Page' />
-                <meta name='description' content='app main page with content' />
-                <meta name='keywords' content='app main, app home' />
+                <meta name='title' content='Contact Us' />
+                <meta name='description' content='Contact Us with form' />
+                <meta name='keywords' content='contacts, form' />
             </Head>
             <StylizedSectionInfoBlock>
                 <h1 className='InfoBlockTitle'>Contact us Form</h1>
