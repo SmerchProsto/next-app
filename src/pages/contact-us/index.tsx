@@ -2,6 +2,7 @@ import {SectionInfoBlock} from "@/components/shared/lib/SectionInfoBlock/Section
 import styled from "styled-components";
 import ContactForm from "@/components/ContactForm/ui";
 import {useState} from "react";
+import Head from "next/head";
 
 const StylizedSectionInfoBlock = styled(SectionInfoBlock)`
     display: flex;
@@ -36,13 +37,20 @@ export default function ContactUs() {
     const [isConfirmed, setIsConfirmed] = useState(false);
     const [message, setMessage] = useState("");
     return (
-        <StylizedSectionInfoBlock>
-            <h1 className='InfoBlockTitle'>Contact us Form</h1>
-            <h2>Only CTA on the page</h2>
-            {!isConfirmed
-                ? <ContactForm setIsConfirmed={setIsConfirmed} setMessage={setMessage} />
-                : <div className='InfoBlockMessage'>{message}</div>
-            }
-        </StylizedSectionInfoBlock>
+        <>
+            <Head>
+                <meta name='title' content='Main Page' />
+                <meta name='description' content='app main page with content' />
+                <meta name='keywords' content='app main, app home' />
+            </Head>
+            <StylizedSectionInfoBlock>
+                <h1 className='InfoBlockTitle'>Contact us Form</h1>
+                <h2>Only CTA on the page</h2>
+                {!isConfirmed
+                    ? <ContactForm setIsConfirmed={setIsConfirmed} setMessage={setMessage} />
+                    : <div className='InfoBlockMessage'>{message}</div>
+                }
+            </StylizedSectionInfoBlock>
+        </>
     )
 }

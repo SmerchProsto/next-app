@@ -9,8 +9,8 @@ export default function Index() {
     <>
       <Head>
         <meta name='title' content='Main Page' />
-        <meta name='keywords' content='app main page with content' />
-        <meta name='description' content='app main, app home' />
+        <meta name='description' content='app main page with content' />
+        <meta name='keywords' content='app main, app home' />
       </Head>
         <Main elements={[
             <InfoSection key='infoSection'/>,
