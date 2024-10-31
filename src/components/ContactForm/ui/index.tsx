@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Container } from '@mui/material';
 import { ContactFormBlock, FormField, SubmitButton } from "@/components/ContactForm/lib/styles/index.";
 
-export default function ContactForm() {
+interface ContactFormProps {
+    setIsConfirmed: (solution:boolean) => void;
+    setMessage: (message:string) => void;
+}
+export default function ContactForm({ setIsConfirmed, setMessage }: ContactFormProps) {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -37,6 +41,10 @@ export default function ContactForm() {
             });
             if (response.ok) {
                 console.log('Form submitted successfully');
+                const {message} = await response.json();
+                setIsConfirmed(true)
+                setMessage(message);
+                console.log(message);
                 setTouched({ name: false, email: false, message: false });
             } else {
                 console.error('Form submission failed');
