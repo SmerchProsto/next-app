@@ -43,6 +43,20 @@ export default function ContactUs() {
                 <meta name='description' content='Contact Us with form' />
                 <meta name='keywords' content='contacts, form' />
                 <title>Contact Us</title>
+
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="http://localhost:3000/contact" />
+                <meta property="og:title" content="Contact Us" />
+                <meta property="og:description" content="Reach out to us via our contact form." />
+                <meta property="og:image" content="/Rick-Astley.webp" />
+
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="http://localhost:3000/contact" />
+                <meta name="twitter:title" content="Contact Us" />
+                <meta name="twitter:description" content="Reach out to us via our contact form." />
+                <meta name="twitter:image" content="/Rick-Astley.webp" />
             </Head>
             <StylizedSectionInfoBlock>
                 <h1 className='InfoBlockTitle'>Contact us Form</h1>
