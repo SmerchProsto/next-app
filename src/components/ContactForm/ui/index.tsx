@@ -40,11 +40,11 @@ export default function ContactForm({ setIsConfirmed, setMessage }: ContactFormP
                 body: JSON.stringify(formData),
             });
             if (response.ok) {
-                console.log('Form submitted successfully');
+                console.debug('Form submitted successfully');
                 const {message} = await response.json();
                 setIsConfirmed(true)
                 setMessage(message);
-                console.log(message);
+                console.debug(message);
                 setTouched({ name: false, email: false, message: false });
             } else {
                 console.error('Form submission failed');
