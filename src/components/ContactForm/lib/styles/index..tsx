@@ -48,8 +48,7 @@ export const FormField = styled.div`
         border-color: #3f51b5;
         outline: none;
     }
-
-    /* Условный стиль для класса invalid */
+    
     & .invalid {
         border-color: red !important;
     }
