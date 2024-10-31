@@ -42,6 +42,7 @@ export default function ContactUs() {
                 <meta name='title' content='Contact Us' />
                 <meta name='description' content='Contact Us with form' />
                 <meta name='keywords' content='contacts, form' />
+                <title>Contact Us</title>
             </Head>
             <StylizedSectionInfoBlock>
                 <h1 className='InfoBlockTitle'>Contact us Form</h1>
